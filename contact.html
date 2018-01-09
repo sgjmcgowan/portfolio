@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Stewart McGowan - Contact</title>
+</head>
+
+<!--
+
+Contact
+
+Requires:
+Header Nav
+  Home
+  Portfolio
+  Education
+
+Portfolio Title
+portfolio image (swaps out) (lightboxes)
+buttons for new images (svg triangle #232323)
+image title (swaps out)
+
+-->
+
+<body>
+
+<h1 class="heading">Contact Me</h1>
+
+<nav class="mainNav">
+  <h2 class="hidden">Main Navigation</h2>
+  <ul>
+    <li><p class="link1">Home</p></li>
+    <li><p class="link2">Portfolio</p></li>
+    <li><p class="link3">Education</p></li>
+    <li><p class="link4">Contact Me</p></li>
+  </ul>
+</nav>
+
+<form action="contact.php" method="post" id="contactForm">
+  <div class="formContent">
+    <input type="text" name="name" placeholder=" Name" required>
+    <input type="text" name="email" placeholder=" Email" required>
+    <textarea name="message" placeholder="Message" rows="8" required></textarea>
+    <button>Submit</button>
+  </div>
+</form>
+
+<script src="scripts/main.js"></script>
+</body>
