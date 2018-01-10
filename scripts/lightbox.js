@@ -19,7 +19,7 @@ function popLightbox(currentObject, currentIndex) {
   let lightboxStory = lightbox.querySelector(".lbStory");
 
   lightboxImg.src = "images/uwindsor_logo.png";
-  lightboxDesc.innerHTML = "ENGLISH and CREATIVE WRITING";
+  lightboxDesc.innerHTML = "ENGLISH and Creative Writing";
   lightboxStory.innerHTML = "In-between poetry nights, writing competitions, and running the English Undergraduate Student Association, I learned to analyze the artifacts of popular culture and find where and how a work comes to resonate with its audience. I had the room to experiment and learn how an audience’s ingrained learning morphs perspective and creates a more complete meaning the designer or artist may never have intended."
 
   // lightboxImg.src = "images/" + currentObject.images[currentIndex];
