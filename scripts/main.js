@@ -3,7 +3,11 @@
 var theLinks = document.querySelectorAll(".link");
 
 function movePage () {
-  window.location = [this.id] + ".html";
+  if (this.id == "contact") {
+    window.location = "contactform.php";
+  } else {
+    window.location = [this.id] + ".html";
+  }
 }
 
 theLinks.forEach (function (element) {
