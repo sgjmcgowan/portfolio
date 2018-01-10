@@ -17,22 +17,33 @@
   <nav class="mainNav">
     <h2 class="hidden">Main Navigation</h2>
     <ul>
-      <li><p class="link1">Home</p></li>
-      <li><p class="link2">Portfolio</p></li>
-      <li><p class="link3">Education</p></li>
-      <li><p class="link4">Contact Me</p></li>
+      <li><p class="link" id="index">Home</p></li>
+      <li class="hidden"><p class="link" id="portfolio">Portfolio</p></li>
+      <li><p class="link" id="education">Education</p></li>
+      <li><p class="link" id="contact">Contact Me</p></li>
     </ul>
   </nav>
 
   <div class="portfolioPreview">
     <h2 class="hidden">Portfolio Images</h2>
     <img src="images/previews/redhood_preview_small.png" alt="Preview of Portfolio Image" class="previewImage hiddenLarge">
+    <img src="images/previews/dave_logo_preview_small.png" alt="Preview of Portfolio Image" class="previewImage hiddenLarge">
+    <img src="images/previews/gmus_mainlogo_preview_small.png" alt="Preview of Portfolio Image" class="previewImage hiddenLarge">
+    <img src="images/previews/graffiti_preview_small.png" alt="Preview of Portfolio Image" class="previewImage hiddenLarge">
+    <img src="images/previews/low_poly_preview_small.png" alt="Preview of Portfolio Image" class="previewImage hiddenLarge">
+    <img src="images/previews/worldswithin_preview_small.png" alt="Preview of Portfolio Image" class="previewImage  hiddenLarge">
+
     <img src="images/previews/redhood_preview.png" alt="Preview of Portfolio Image" class="previewImage hiddenSmall showLarge">
-    <div class="portfolioControls">
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
+    <img src="images/previews/dave_logo_preview.png" alt="Preview of Portfolio Image" class="previewImage hiddenSmall showLarge">
+    <img src="images/previews/gmus_mainlogo_preview.png" alt="Preview of Portfolio Image" class="previewImage hiddenSmall showLarge">
+    <img src="images/previews/graffiti_preview.png" alt="Preview of Portfolio Image" class="previewImage hiddenSmall showLarge">
+    <img src="images/previews/low_poly_preview.png" alt="Preview of Portfolio Image" class="previewImage hiddenSmall showLarge">
+    <img src="images/previews/worldswithin_preview.png" alt="Preview of Portfolio Image" class="previewImage hiddenSmall showLarge">
+    <!-- <div class="portfolioControls">
+      <a id="prev" class="galleryButton">&#10094;</a>
+      <a id="next" class="galleryButton">&#10095;</a>
       <p class="pieceTitle">RED<p>
-    </div>
+    </div> -->
   </div>
 
   <section class="lightbox">
@@ -41,5 +52,6 @@
     <p class="portfolioDesc">Placeholder Copy</p>
   </section>
 
+<script src="scripts/gallery.js"></script>
 <script src="scripts/main.js"></script>
 </body>

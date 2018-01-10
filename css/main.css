@@ -32,7 +32,6 @@
          url('fonts/josefinsans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .hidden
@@ -53,19 +52,18 @@
 {
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 0;
 }
 
 .mainNav li
 {
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
   float: left;
 }
 
 .mainNav li
 {
-  text-decoration: none;
   font-family: "Montserrat", sans-serif;
   color: #7E7E7E;
   cursor: pointer;
@@ -204,6 +202,7 @@
   width: 95%;
   margin: 0 auto;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .previewImage
@@ -222,14 +221,14 @@
   font-size: 2em;
 }
 
-.prev
+#prev
 {
  float: left;
  font-size: 35px;
  cursor: pointer;
 }
 
-.next
+#next
 {
   float: right;
   font-size: 35px;
@@ -238,32 +237,65 @@
 
 /*-------LIGHTBOX-------*/
 
-.lightbox{
-  display: none;
-  background-color: #000;
+.lightbox
+{
+	font-family: 'Palatino', sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0, 0, 20px, 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.85);
+	text-align: center;
+	color: white;
+	z-index: 500;
 }
 
-.lightbox img{
+.lightbox img
+{
   max-width: 90%;
   max-height: 90%;
+  margin: 10px 0 10px 25px;
 }
 
-.lightbox p{
-  background-color: #565655;
+.lightbox p
+{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  line-height: 25px;
+  padding: 10px;
 }
 
-.close-lightbox {
-float: right;
-margin-right: 18px;
-margin-top: 12px;
-font-size: 2em;
-cursor: pointer;
-color: #fff;
+.lbStory
+{
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+  text-align: justify;
+}
+
+.close-lightbox
+{
+  margin-right: 18px;
+  margin-top: 12px;
+  font-size: 2em;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+}
+
+.close-lightbox p
+{
+  background-color: none;
+  float: right;
 }
 
 /*-------EDUCATION-------*/
 
-#uwindsor
+#uwindsor_logo
 {
   display: block;
   margin: 0 auto;
@@ -283,9 +315,9 @@ color: #fff;
   margin-bottom: 10px;
 }
 
-.instDesc
+.schoolImage
 {
-  display: none;
+  cursor: pointer;
 }
 
 /*-------CONTACT-------*/
@@ -310,6 +342,7 @@ textarea
   border: 0;
   margin: 10px;
   width: 260px;
+  height: 8em;
 }
 
 button
@@ -331,11 +364,6 @@ button:hover
   background-color: #7E7E7E;
 }
 
-/*-------TRANSITION-------*/
-
-
-
-
 /*-------NECESSARY-------*/
 
 .hiddenSmall
@@ -346,9 +374,9 @@ button:hover
 /*-------MEDIA QUERIES-------*/
 
 @media screen and (min-width: 480px) {
-    body {
+    /* body {
         background-color: lightgreen;
-    }
+    } */
 
     .hiddenMed
     {
@@ -357,7 +385,7 @@ button:hover
 
     .showMed
     {
-      display: inline;
+      display: block;
     }
 
     .heading
@@ -397,7 +425,7 @@ button:hover
       border-top: 0;
       margin-top: 0;
       padding-top: 0;
-      margin-left: 3%;
+      margin-left: 7%;
       float: left;
     }
 
@@ -417,20 +445,21 @@ button:hover
   textarea
   {
     width: 400px;
+    height: 10em;
   }
 
 }
 
 @media screen and (min-width: 900px) {
 
-  body
+  /* body
   {
     background-color: lightblue;
-  }
+  } */
 
   .showLarge
   {
-    display: inline;
+    display: block;
   }
 
   .mainNav
@@ -490,14 +519,33 @@ button:hover
 
 .institution
 {
-  float: left;
-  margin-right: 0;
-  margin-left: 75px;
+  text-align: center;
 }
 
 /*------CONTACT--------*/
 
+#contactForm
+{
+  width: 100%;
+  background-color: #D1D1D1;
+  padding: 20px;
+  margin-top: 20px;
+}
 
+input
+{
+  border: 0;
+  margin: 10px;
+  height: 20px;
+}
+
+textarea
+{
+  border: 0;
+  margin: 10px;
+  width: 400px;
+  height: 12em;
+}
 
 /*--------------*/
 
