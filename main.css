@@ -1,0 +1,580 @@
+@font-face
+{
+    font-family: 'montserratregular';
+    src: url(fonts/monserratregular),
+         url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'drugsregular';
+    src: url('drugs-webfont.woff2') format('woff2'),
+         url('drugs-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('fonts/nexa_bold-webfont.woff2') format('woff2'),
+         url('fonts/nexa_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('fonts/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('fonts/josefinsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden
+{
+  display: none;
+}
+
+.heading
+{
+  font-family: "Montserrat", sans-serif;
+  color: #232323;
+  text-align: center;
+  font-size: 250%;
+  margin-top: 40px;
+}
+
+.mainNav
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mainNav li
+{
+  margin-top: 10px;
+  margin-right: 5px;
+  float: left;
+}
+
+.mainNav li
+{
+  font-family: "Montserrat", sans-serif;
+  color: #7E7E7E;
+  cursor: pointer;
+}
+
+.mainNav li:hover
+{
+  color: #515151;
+}
+
+/*-------HOME PAGE-------*/
+
+.mainLogo
+{
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.logoTriangles
+{
+  width: 70%;
+  max-width: 435px;
+  margin: 0 auto;
+  display: block;
+}
+
+.logoName
+{
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+#underNav
+{
+  width: 90%;
+  margin: auto;
+}
+
+.dividerBar
+{
+  width: 100%;
+  height: 3px;
+  background-color: #7E7E7E;
+  margin-top: 10px;
+}
+
+.homeNav
+{
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.homeNav li
+{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid #7E7E7E;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #7E7E7E;
+  cursor: pointer;
+}
+
+.homeNav li:hover
+{
+  color: #515151;
+}
+
+.homeNav li:first-child
+{
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.descButton
+{
+  width: 25%;
+  max-width: 100px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.personalDesc
+{
+  width: 80%;
+  margin: 0 auto;
+  color: #232323;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: opacity 0.3s linear;
+}
+
+.personalDesc p
+{
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.personalDesc p:first-child
+{
+  margin-top: 0;
+}
+
+.visual
+{
+  font-family: "nexa_boldregular", sans-serif;
+}
+
+.uiux
+{
+  font-family: "Drugs", sans-serif;
+}
+
+.game
+{
+  font-family: "josefin_sansregular", sans-serif;
+}
+
+.secret
+{
+  position: absolute;
+  max-width: 5%
+}
+
+/*-------PORTFOLIO-------*/
+
+.portfolioPreview
+{
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.previewImage
+{
+  width: 320px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.pieceTitle
+{
+  margin-top: 5px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+}
+
+#prev
+{
+ float: left;
+ font-size: 35px;
+ cursor: pointer;
+}
+
+#next
+{
+  float: right;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/*-------LIGHTBOX-------*/
+
+.lightbox
+{
+	font-family: 'Palatino', sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0, 0, 20px, 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.85);
+	text-align: center;
+	color: white;
+	z-index: 500;
+}
+
+.lightbox img
+{
+  max-width: 90%;
+  max-height: 90%;
+  margin: 10px 0 10px 25px;
+}
+
+.lightbox p
+{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  line-height: 25px;
+  padding: 10px;
+}
+
+.lbStory
+{
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+  text-align: justify;
+}
+
+.close-lightbox
+{
+  margin-right: 18px;
+  margin-top: 12px;
+  font-size: 2em;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+}
+
+.close-lightbox p
+{
+  background-color: none;
+  float: right;
+}
+
+/*-------EDUCATION-------*/
+
+#uwindsor_logo
+{
+  display: block;
+  margin: 0 auto;
+}
+
+#fanshawec
+{
+  display: block;
+  margin: 0 auto;
+}
+
+.institution
+{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.schoolImage
+{
+  cursor: pointer;
+}
+
+/*-------CONTACT-------*/
+
+#contactForm
+{
+  width: 100%;
+  background-color: #D1D1D1;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+input
+{
+  border: 0;
+  margin: 10px;
+  height: 20px;
+}
+
+textarea
+{
+  border: 0;
+  margin: 10px;
+  width: 260px;
+  height: 8em;
+}
+
+button
+{
+  border: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  background-color: #555555;
+  font-size: 1em;
+  display: inline-block;
+  padding: 5px 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover
+{
+  background-color: #7E7E7E;
+}
+
+.error
+{
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: red;
+  text-align: center;
+}
+
+.thanks
+{
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/*-------NECESSARY-------*/
+
+.hiddenSmall
+{
+  display: none;
+}
+
+/*-------MEDIA QUERIES-------*/
+
+@media screen and (min-width: 480px) {
+
+    .hiddenMed
+    {
+      display: none;
+    }
+
+    .showMed
+    {
+      display: block;
+    }
+
+    .heading
+    {
+      margin-top: 80px;
+    }
+
+    .mainNav
+    {
+      width: 75%;
+      max-width: 350px;
+    }
+
+    .mainNav li
+    {
+      margin-top: 10px;
+      margin-right: 15px;
+      float: left;
+      font-size: 1.25em;
+    }
+
+/*-------HOME-------*/
+
+    .logoTriangles
+    {
+      margin-top: 50px;
+    }
+    ul
+    {
+      width: 95%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .homeNav li
+    {
+      font-size: 1.5em;
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+      margin-left: 7%;
+      float: left;
+    }
+
+    .personalDesc
+    {
+      max-width: 450px;
+    }
+
+/*------CONTACT--------*/
+
+  .formContent
+  {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  textarea
+  {
+    width: 400px;
+    height: 10em;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+
+  .showLarge
+  {
+    display: block;
+  }
+
+  .mainNav
+  {
+    max-width: 445px;
+    font-size: 1.35em;
+  }
+
+/*-------HOME-------*/
+
+    .logoTriangles
+    {
+      margin-top: 100px;
+    }
+    ul
+    {
+      width: 95%;
+      max-width: 600px;
+    }
+    .homeNav li
+    {
+      font-size: 2em;
+      margin-left: 5%;
+      float: left;
+    }
+
+/*-------PORTFOLIO-------*/
+
+.previewImage
+{
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*-------EDUCATION-------*/
+
+.schools
+{
+  width: 90%;
+  max-width: 641px;
+  margin: 0 auto;
+}
+
+.windsorContainer
+{
+  float: left;
+  margin-top: 20px;
+}
+
+.fanshaweContainer
+{
+  float: right;
+  margin-top: 20px;
+}
+
+.institution
+{
+  text-align: center;
+}
+
+/*------CONTACT--------*/
+
+#contactForm
+{
+  width: 100%;
+  background-color: #D1D1D1;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+input
+{
+  border: 0;
+  margin: 10px;
+  height: 20px;
+}
+
+textarea
+{
+  border: 0;
+  margin: 10px;
+  width: 400px;
+  height: 12em;
+}
+
+/*--------------*/
+
+.hiddenLarge
+{
+  display: none;
+}
+
+}
+
+.faded
+{
+  opacity: 0;
+}
+
+.show
+{
+  opacity: 1;
+}
+
+#underNav
+{
+  transition: opacity 0.5s linear;
+}
