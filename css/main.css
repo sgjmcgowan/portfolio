@@ -278,6 +278,24 @@ body
   width: 95%;
   max-width: 500px;
   margin: 0 auto;
+  line-height: 20px;
+  text-align: justify;
+}
+
+h5
+{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  line-height: 25px;
+  padding: 10px;
+}
+
+h6
+{
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 20px;
   text-align: justify;
 }
 

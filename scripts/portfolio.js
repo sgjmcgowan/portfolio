@@ -1,7 +1,7 @@
 (function(){
 
   function fetchAllPieces() {
-    console.log("Fired Fetch");
+
     let url = './admin/scripts/functions.php?getAllPieces=true';
 
       fetch(url)
@@ -13,8 +13,6 @@
     }
 
   function loadAllPieces(data) {
-
-      console.log("Fired Load");
 
       let artHolder = document.querySelector('.portfolioPreview');
 
@@ -49,16 +47,17 @@
       let lightbox = document.querySelector(".lightbox");
       lightbox.style.display = "block";
 
-      let piece = lightbox.querySelector(".lightbox-image");
-      let name = lightbox.querySelector(".img-descButton");
-      let desc = lightbox.querySelector(".lbstory");
-      let lightboxClose = lightbox.querySelector(".close-lightbox");
+      let lightboxClose = lightbox.querySelector("span");
+      lightboxClose.addEventListener('click', closeLightbox, false);
+
+      let piece = lightbox.querySelector("img");
+      let name = lightbox.querySelector("h5");
+      let desc = lightbox.querySelector("h6");
 
       piece.src = "images/portfolio/" + data.img_path;
       name.innerHTML += data.img_name;
       desc.innerHTML += data.img_desc;
 
-      lightboxClose.addEventListener('click', closeLightbox, false);
   }
 
   function closeLightbox() {
@@ -71,10 +70,11 @@
     let lightboxImg = lightbox.querySelector("img");
     let lightboxClose = lightbox.querySelector(".close-lightbox");
     let lightboxDesc = lightbox.querySelector(".img-desc");
-    let lightboxStory = lightbox.querySelector(".lbStory");
+    let lightboxStory = lightbox.querySelector("h6");
 
     lightboxImg.src = " ";
     lightboxDesc.innerHTML = " ";
+    lightboxStory.innerHTML = " ";
   }
 
 window.addEventListener("load", fetchAllPieces, false);
