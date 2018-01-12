@@ -1,20 +1,15 @@
 <?php
-//his file will connect us to the database.
-$user = "root";
-// For MAC $pass = "root";
-$pass = "root"; //For PC $pass = "";
+
+$user = "melissat_Stewart";
+$pass = "A5thofvodka";
 $url = "localhost";
-$db = "db_portfolio_images";
+$db = "melissat_db_portfolio_images";
 
-$link = mysqli_connect($url, $user, $pass, $db, "8888"); //PC
-//For MAC include port address $link = mysqli_connect($url, $user, $pass, $db, "8888");
+$link = mysqli_connect($url, $user, $pass, $db);
 
-//Check Connection error
 if(mysqli_connect_errno()){
   printf("Connect Failed: %s\n", mysqli_connect_error());
   exit();
 }
-
-//echo "connected!"
 
 ?>
