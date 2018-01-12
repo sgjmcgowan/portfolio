@@ -39,6 +39,11 @@
   display: none;
 }
 
+body
+{
+  background-color: #fff;
+}
+
 .heading
 {
   font-family: "Montserrat", sans-serif;
@@ -273,7 +278,6 @@
   width: 95%;
   max-width: 500px;
   margin: 0 auto;
-  border-radius: 0 0 10px 10px;
   text-align: justify;
 }
 
@@ -299,12 +303,14 @@
 {
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 #fanshawec
 {
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .institution
@@ -313,11 +319,6 @@
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   margin-bottom: 10px;
-}
-
-.schoolImage
-{
-  cursor: pointer;
 }
 
 /*-------CONTACT-------*/
